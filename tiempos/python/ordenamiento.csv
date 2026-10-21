@@ -1,0 +1,116 @@
+algoritmo,tipo,longitud,tiempo
+Insertion sort,ordenamiento,100000,240805280814
+Insertion sort,ordenamiento,100000,244326148024
+Insertion sort,ordenamiento,100000,246933872887
+Insertion sort,ordenamiento,100000,242189096696
+Insertion sort,ordenamiento,100000,244828072614
+Insertion sort,ordenamiento,10000,2130076165
+Insertion sort,ordenamiento,10000,2110769094
+Insertion sort,ordenamiento,10000,2069330769
+Insertion sort,ordenamiento,10000,2018683696
+Insertion sort,ordenamiento,10000,1972814622
+Insertion sort,ordenamiento,1000,18545239
+Insertion sort,ordenamiento,1000,18538465
+Insertion sort,ordenamiento,1000,18731437
+Insertion sort,ordenamiento,1000,19795822
+Insertion sort,ordenamiento,1000,18419803
+Dual pivot quicksort,ordenamiento,1000000,1977288393
+Dual pivot quicksort,ordenamiento,1000000,1985698714
+Dual pivot quicksort,ordenamiento,1000000,2067337212
+Dual pivot quicksort,ordenamiento,1000000,2077587857
+Dual pivot quicksort,ordenamiento,1000000,2039275153
+Dual pivot quicksort,ordenamiento,100000,137949514
+Dual pivot quicksort,ordenamiento,100000,155430716
+Dual pivot quicksort,ordenamiento,100000,132858343
+Dual pivot quicksort,ordenamiento,100000,137840142
+Dual pivot quicksort,ordenamiento,100000,143730648
+Dual pivot quicksort,ordenamiento,10000,9673336
+Dual pivot quicksort,ordenamiento,10000,10690648
+Dual pivot quicksort,ordenamiento,10000,10460799
+Dual pivot quicksort,ordenamiento,10000,10292830
+Dual pivot quicksort,ordenamiento,10000,11638957
+Dual pivot quicksort,ordenamiento,1000,758619
+Dual pivot quicksort,ordenamiento,1000,744861
+Dual pivot quicksort,ordenamiento,1000,783971
+Dual pivot quicksort,ordenamiento,1000,862613
+Dual pivot quicksort,ordenamiento,1000,733406
+Merge sort,ordenamiento,1000000,5022147988
+Merge sort,ordenamiento,1000000,4714614715
+Merge sort,ordenamiento,1000000,4917122624
+Merge sort,ordenamiento,1000000,4783878825
+Merge sort,ordenamiento,1000000,4744908212
+Merge sort,ordenamiento,100000,346905614
+Merge sort,ordenamiento,100000,350887211
+Merge sort,ordenamiento,100000,323930954
+Merge sort,ordenamiento,100000,325990930
+Merge sort,ordenamiento,100000,329490691
+Merge sort,ordenamiento,10000,24668877
+Merge sort,ordenamiento,10000,26875311
+Merge sort,ordenamiento,10000,26986080
+Merge sort,ordenamiento,10000,25408988
+Merge sort,ordenamiento,10000,29019797
+Merge sort,ordenamiento,1000,2056694
+Merge sort,ordenamiento,1000,2349679
+Merge sort,ordenamiento,1000,2161736
+Merge sort,ordenamiento,1000,2015627
+Merge sort,ordenamiento,1000,1983710
+Heap sort,ordenamiento,1000000,6453064388
+Heap sort,ordenamiento,1000000,6088783521
+Heap sort,ordenamiento,1000000,6134880976
+Heap sort,ordenamiento,1000000,6201293734
+Heap sort,ordenamiento,1000000,5900002552
+Heap sort,ordenamiento,100000,367920450
+Heap sort,ordenamiento,100000,392581296
+Heap sort,ordenamiento,100000,387150137
+Heap sort,ordenamiento,100000,382910405
+Heap sort,ordenamiento,100000,381182035
+Heap sort,ordenamiento,10000,24996294
+Heap sort,ordenamiento,10000,26540701
+Heap sort,ordenamiento,10000,26675286
+Heap sort,ordenamiento,10000,27034899
+Heap sort,ordenamiento,10000,25847105
+Heap sort,ordenamiento,1000,1919526
+Heap sort,ordenamiento,1000,1802890
+Heap sort,ordenamiento,1000,1733537
+Heap sort,ordenamiento,1000,1729905
+Heap sort,ordenamiento,1000,1869799
+Radix sort,ordenamiento,1000000,4901907221
+Radix sort,ordenamiento,1000000,5393272978
+Radix sort,ordenamiento,1000000,5593678586
+Radix sort,ordenamiento,1000000,5519215260
+Radix sort,ordenamiento,1000000,5123366567
+Radix sort,ordenamiento,100000,378824114
+Radix sort,ordenamiento,100000,383604420
+Radix sort,ordenamiento,100000,394892353
+Radix sort,ordenamiento,100000,467382096
+Radix sort,ordenamiento,100000,461727164
+Radix sort,ordenamiento,10000,44709913
+Radix sort,ordenamiento,10000,41988467
+Radix sort,ordenamiento,10000,41037085
+Radix sort,ordenamiento,10000,48616291
+Radix sort,ordenamiento,10000,29019937
+Radix sort,ordenamiento,1000,2666690
+Radix sort,ordenamiento,1000,2704894
+Radix sort,ordenamiento,1000,2628837
+Radix sort,ordenamiento,1000,2736253
+Radix sort,ordenamiento,1000,2694557
+Bucket sort,ordenamiento,1000000,1609466977
+Bucket sort,ordenamiento,1000000,1444816338
+Bucket sort,ordenamiento,1000000,1466044610
+Bucket sort,ordenamiento,1000000,1491893182
+Bucket sort,ordenamiento,1000000,1622679605
+Bucket sort,ordenamiento,100000,135207324
+Bucket sort,ordenamiento,100000,116892213
+Bucket sort,ordenamiento,100000,121455102
+Bucket sort,ordenamiento,100000,123758826
+Bucket sort,ordenamiento,100000,114654978
+Bucket sort,ordenamiento,10000,7753181
+Bucket sort,ordenamiento,10000,7766521
+Bucket sort,ordenamiento,10000,6399931
+Bucket sort,ordenamiento,10000,8037926
+Bucket sort,ordenamiento,10000,6552674
+Bucket sort,ordenamiento,1000,622847
+Bucket sort,ordenamiento,1000,607482
+Bucket sort,ordenamiento,1000,652041
+Bucket sort,ordenamiento,1000,676765
+Bucket sort,ordenamiento,1000,613838

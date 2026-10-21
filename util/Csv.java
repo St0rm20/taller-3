@@ -13,16 +13,16 @@ public class Csv {
     // Si es false se asume que solo son pruebas y no se guarda nada
     public static boolean guardar = true;
 
-    static final String CARPETA = "tiempos";
-    static final String ENCABEZADO = "algoritmo,tipo,tiempo";
+    static final String CARPETA = "tiempos/java";
+    static final String ENCABEZADO = "algoritmo,tipo,longitud,tiempo";
 
-    // Metodo de utilidad: recibe los 3 parametros y hace todo el proceso
-    public static void registrarTiempo(String algoritmo, String tipo, long tiempo) {
+    // Metodo de utilidad: recibe los 4 parametros y hace todo el proceso
+    public static void registrarTiempo(String algoritmo, String tipo, int longitud, long tiempo) {
         if (!guardar)
             return;
         crearCarpeta();
         crearArchivo(tipo);
-        guardarDatos(algoritmo, tipo, tiempo);
+        guardarDatos(algoritmo, tipo, longitud, tiempo);
     }
 
     // Metodo de utilidad: devuelve el nombre normalizado del tipo
@@ -70,11 +70,15 @@ public class Csv {
     }
 
     // Agrega una fila al CSV del tipo indicado
-    public static void guardarDatos(String algoritmo, String tipo, long tiempo) {
+    // Agrega una fila al CSV del tipo indicado
+    public static void guardarDatos(String algoritmo, String tipo, int longitud, long tiempo) {
         if (!guardar)
             return;
+        crearCarpeta();
+        crearArchivo(tipo);
         Path archivo = rutaArchivo(tipo);
-        String fila = algoritmo + "," + normalizarTipo(tipo) + "," + tiempo + System.lineSeparator();
+        String fila = algoritmo + "," + normalizarTipo(tipo) + "," + longitud + "," + tiempo
+                + System.lineSeparator();
         try {
             Files.write(archivo, fila.getBytes(StandardCharsets.UTF_8), StandardOpenOption.APPEND);
         } catch (IOException e) {

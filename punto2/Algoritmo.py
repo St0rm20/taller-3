@@ -113,10 +113,11 @@ def interpolationSearch(arr, lo, hi, x):
     # in array must be in range defined by corner
     if (lo <= hi and x >= arr[lo] and x <= arr[hi]):
 
+        if arr[hi] == arr[lo]:
+            return lo if arr[lo] == x else -1
         # Probing the position with keeping
         # uniform distribution in mind.
-        pos = lo + ((hi - lo) // (arr[hi] - arr[lo]) *
-                    (x - arr[lo]))
+        pos = lo + (hi - lo) * (x - arr[lo]) // (arr[hi] - arr[lo])
 
         # Condition of target found
         if arr[pos] == x:

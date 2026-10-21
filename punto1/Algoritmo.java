@@ -6,6 +6,13 @@ public class Algoritmo {
 
     // Fuente: https://www.geeksforgeeks.org/dsa/insertion-sort-algorithm/
 
+    static void printArray(int[] arr) {
+        for (int x : arr) {
+            System.out.print(x + " ");
+        }
+        System.out.println();
+    }
+
     static class InsertionSort {
         static void insertionSort(int[] arr) {
             int n = arr.length;
@@ -23,12 +30,6 @@ public class Algoritmo {
         }
     }
 
-    static void printArray(int[] arr) {
-        for (int x : arr) {
-            System.out.print(x + " ");
-        }
-        System.out.println();
-    }
 
     // Fuente: https://www.geeksforgeeks.org/dsa/dual-pivot-quicksort/
     // dual pivot QuickSort

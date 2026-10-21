@@ -142,9 +142,10 @@ public class Algoritmo {
 
                 // Probing the position with keeping
                 // uniform distribution in mind.
-                pos = lo
-                        + (((hi - lo) / (arr[hi] - arr[lo]))
-                                * (x - arr[lo]));
+                if (arr[hi] == arr[lo])
+                    return arr[lo] == x ? lo : -1;
+                pos = lo + (int) ((long) (hi - lo) * ((long) x - arr[lo])
+                        / ((long) arr[hi] - arr[lo]));
 
                 // Condition of target found
                 if (arr[pos] == x)

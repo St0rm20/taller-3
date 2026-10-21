@@ -4,17 +4,17 @@ import unicodedata
 # Si es False se asume que solo son pruebas y no se guarda nada
 guardar = True
 
-CARPETA = "tiempos"
-ENCABEZADO = "algoritmo,tipo,tiempo"
+CARPETA = os.path.join("tiempos", "python")
+ENCABEZADO = "algoritmo,tipo,longitud,tiempo"
 
 
-# Metodo de utilidad: recibe los 3 parametros y hace todo el proceso
-def registrar_tiempo(algoritmo, tipo, tiempo):
+# Metodo de utilidad: recibe los 4 parametros y hace todo el proceso
+def registrar_tiempo(algoritmo, tipo, longitud, tiempo):
     if not guardar:
         return
     crear_carpeta()
     crear_archivo(tipo)
-    guardar_datos(algoritmo, tipo, tiempo)
+    guardar_datos(algoritmo, tipo, longitud, tiempo)
 
 
 # Metodo de utilidad: devuelve el nombre normalizado del tipo
@@ -47,16 +47,16 @@ def crear_archivo(tipo):
     archivo = ruta_archivo(tipo)
     if not os.path.isfile(archivo):
         with open(archivo, "w", encoding="utf-8") as f:
-            f.write(ENCABEZADO + "\n")  
+            f.write(ENCABEZADO + "\n")
 
 
 # Agrega una fila al CSV del tipo indicado
-def guardar_datos(algoritmo, tipo, tiempo):
+def guardar_datos(algoritmo, tipo, longitud, tiempo):
     if not guardar:
         return
     archivo = ruta_archivo(tipo)
     with open(archivo, "a", encoding="utf-8") as f:
-        f.write(f"{algoritmo},{normalizar_tipo(tipo)},{tiempo}\n")
+        f.write(f"{algoritmo},{normalizar_tipo(tipo)},{longitud},{tiempo}\n")
 
 
 # Lee el CSV del tipo indicado y devuelve una lista de diccionarios
@@ -73,6 +73,11 @@ def leer_datos(tipo):
             linea = linea.strip()
             if not linea:
                 continue
-            algoritmo, t, tiempo = linea.split(",")
-            datos.append({"algoritmo": algoritmo, "tipo": t, "tiempo": int(tiempo)})
+            algoritmo, t, longitud, tiempo = linea.split(",")
+            datos.append({
+                "algoritmo": algoritmo,
+                "tipo": t,
+                "longitud": int(longitud),
+                "tiempo": int(tiempo),
+            })
     return datos
