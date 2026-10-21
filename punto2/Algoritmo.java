@@ -1,6 +1,6 @@
 package punto2;
 
-public class Algoritmos {
+public class Algoritmo {
 
     // Fuente: https://www.geeksforgeeks.org/dsa/linear-search/
 

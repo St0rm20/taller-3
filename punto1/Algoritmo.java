@@ -2,7 +2,7 @@ package punto1;
 
 import java.util.*;
 
-public class Algoritmos {
+public class Algoritmo {
 
     // Fuente: https://www.geeksforgeeks.org/dsa/insertion-sort-algorithm/
 
