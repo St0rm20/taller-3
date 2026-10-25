@@ -11,7 +11,7 @@ import java.text.Normalizer;
 public class Csv {
 
     // Si es false se asume que solo son pruebas y no se guarda nada
-    public static boolean guardar = true;
+    public static boolean guardar = false;
 
     static final String CARPETA = "tiempos/java";
     static final String ENCABEZADO = "algoritmo,tipo,longitud,tiempo";

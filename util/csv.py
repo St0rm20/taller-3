@@ -2,7 +2,7 @@ import os
 import unicodedata
 
 # Si es False se asume que solo son pruebas y no se guarda nada
-guardar = True
+guardar = False
 
 CARPETA = os.path.join("tiempos", "python")
 ENCABEZADO = "algoritmo,tipo,longitud,tiempo"
