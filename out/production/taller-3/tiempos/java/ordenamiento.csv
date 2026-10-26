@@ -1,0 +1,120 @@
+Insertion sort,ordenamiento,1000000,117641139669
+Insertion sort,ordenamiento,1000000,116873155339
+Insertion sort,ordenamiento,1000000,119705422418
+Insertion sort,ordenamiento,1000000,119470972124
+Insertion sort,ordenamiento,1000000,117283662813
+Insertion sort,ordenamiento,100000,1073521634
+Insertion sort,ordenamiento,100000,1035604149
+Insertion sort,ordenamiento,100000,1070938408
+Insertion sort,ordenamiento,100000,1028687819
+Insertion sort,ordenamiento,100000,1052592804
+Insertion sort,ordenamiento,10000,9990261
+Insertion sort,ordenamiento,10000,9913227
+Insertion sort,ordenamiento,10000,10069602
+Insertion sort,ordenamiento,10000,10295749
+Insertion sort,ordenamiento,10000,10344218
+Insertion sort,ordenamiento,1000,125994
+Insertion sort,ordenamiento,1000,111886
+Insertion sort,ordenamiento,1000,114540
+Insertion sort,ordenamiento,1000,118102
+Insertion sort,ordenamiento,1000,104623
+Dual pivot quicksort,ordenamiento,1000000,101831357
+Dual pivot quicksort,ordenamiento,1000000,117756187
+Dual pivot quicksort,ordenamiento,1000000,114776052
+Dual pivot quicksort,ordenamiento,1000000,117171124
+Dual pivot quicksort,ordenamiento,1000000,118670551
+Dual pivot quicksort,ordenamiento,100000,10161582
+Dual pivot quicksort,ordenamiento,100000,9949963
+Dual pivot quicksort,ordenamiento,100000,9329840
+Dual pivot quicksort,ordenamiento,100000,9568419
+Dual pivot quicksort,ordenamiento,100000,14167619
+Dual pivot quicksort,ordenamiento,10000,1198898
+Dual pivot quicksort,ordenamiento,10000,1193730
+Dual pivot quicksort,ordenamiento,10000,869247
+Dual pivot quicksort,ordenamiento,10000,864009
+Dual pivot quicksort,ordenamiento,10000,854720
+Dual pivot quicksort,ordenamiento,1000,67677
+Dual pivot quicksort,ordenamiento,1000,60273
+Dual pivot quicksort,ordenamiento,1000,59644
+Dual pivot quicksort,ordenamiento,1000,56432
+Dual pivot quicksort,ordenamiento,1000,56851
+Merge sort,ordenamiento,1000000,257502305
+Merge sort,ordenamiento,1000000,180381554
+Merge sort,ordenamiento,1000000,182354226
+Merge sort,ordenamiento,1000000,182526734
+Merge sort,ordenamiento,1000000,176682470
+Merge sort,ordenamiento,100000,14096101
+Merge sort,ordenamiento,100000,14015644
+Merge sort,ordenamiento,100000,14512147
+Merge sort,ordenamiento,100000,14242559
+Merge sort,ordenamiento,100000,16883963
+Merge sort,ordenamiento,10000,1339838
+Merge sort,ordenamiento,10000,1300378
+Merge sort,ordenamiento,10000,1312670
+Merge sort,ordenamiento,10000,1229419
+Merge sort,ordenamiento,10000,1287108
+Merge sort,ordenamiento,1000,117264
+Merge sort,ordenamiento,1000,152114
+Merge sort,ordenamiento,1000,111118
+Merge sort,ordenamiento,1000,123619
+Merge sort,ordenamiento,1000,121594
+Heap sort,ordenamiento,1000000,255689849
+Heap sort,ordenamiento,1000000,228131319
+Heap sort,ordenamiento,1000000,223466258
+Heap sort,ordenamiento,1000000,222185436
+Heap sort,ordenamiento,1000000,222195074
+Heap sort,ordenamiento,100000,14570255
+Heap sort,ordenamiento,100000,14237390
+Heap sort,ordenamiento,100000,13728525
+Heap sort,ordenamiento,100000,13972412
+Heap sort,ordenamiento,100000,14033663
+Heap sort,ordenamiento,10000,1122911
+Heap sort,ordenamiento,10000,1128079
+Heap sort,ordenamiento,10000,1153083
+Heap sort,ordenamiento,10000,1121794
+Heap sort,ordenamiento,10000,1151407
+Heap sort,ordenamiento,1000,95822
+Heap sort,ordenamiento,1000,87232
+Heap sort,ordenamiento,1000,94845
+Heap sort,ordenamiento,1000,90584
+Heap sort,ordenamiento,1000,91562
+Radix sort,ordenamiento,1000000,224376782
+Radix sort,ordenamiento,1000000,201852354
+Radix sort,ordenamiento,1000000,170834785
+Radix sort,ordenamiento,1000000,169046285
+Radix sort,ordenamiento,1000000,169339829
+Radix sort,ordenamiento,100000,16107954
+Radix sort,ordenamiento,100000,16168087
+Radix sort,ordenamiento,100000,16253434
+Radix sort,ordenamiento,100000,16122481
+Radix sort,ordenamiento,100000,16193300
+Radix sort,ordenamiento,10000,1642112
+Radix sort,ordenamiento,10000,1610404
+Radix sort,ordenamiento,10000,1611172
+Radix sort,ordenamiento,10000,1624862
+Radix sort,ordenamiento,10000,1607401
+Radix sort,ordenamiento,1000,163220
+Radix sort,ordenamiento,1000,162940
+Radix sort,ordenamiento,1000,162521
+Radix sort,ordenamiento,1000,163639
+Radix sort,ordenamiento,1000,162870
+Bucket sort,ordenamiento,1000000,367125454
+Bucket sort,ordenamiento,1000000,366451205
+Bucket sort,ordenamiento,1000000,424403060
+Bucket sort,ordenamiento,1000000,436051498
+Bucket sort,ordenamiento,1000000,370978049
+Bucket sort,ordenamiento,100000,29083658
+Bucket sort,ordenamiento,100000,27749826
+Bucket sort,ordenamiento,100000,29048598
+Bucket sort,ordenamiento,100000,28214482
+Bucket sort,ordenamiento,100000,27064542
+Bucket sort,ordenamiento,10000,1170333
+Bucket sort,ordenamiento,10000,1183393
+Bucket sort,ordenamiento,10000,1305476
+Bucket sort,ordenamiento,10000,1199597
+Bucket sort,ordenamiento,10000,1384468
+Bucket sort,ordenamiento,1000,113352
+Bucket sort,ordenamiento,1000,109022
+Bucket sort,ordenamiento,1000,112165
+Bucket sort,ordenamiento,1000,93867
+Bucket sort,ordenamiento,1000,100572

@@ -15,7 +15,7 @@ TAMANOS = [1_000_000, 100_000, 10_000, 1_000]
 REPETICIONES = 5
 
 # Variantes de entrada: nombre -> (txt de entrada, csv de salida)
-# Uso: python punto1/main.py [aleatorio|ascendente|descendente]
+# Uso: python punto1/main.py [aleatorio|ascendente|descendente] (sin argumento usa VARIANTE)
 VARIANTES = {
     "aleatorio": ("numeros.txt", "ordenamiento"),
     "ascendente": ("numeros_asc.txt", "or_ascendente"),
@@ -23,9 +23,12 @@ VARIANTES = {
 }
 tipo_csv = "ordenamiento"
 
+# Variante que se usa al ejecutar sin argumentos: "aleatorio", "ascendente" o "descendente"
+VARIANTE = "descendente"
+
 # Insertion sort es O(n^2) y en Python 1.000.000 tardaria horas por corrida,
 # asi que por defecto se omite ese tamano. Agrega 1_000_000 si de verdad lo quieres.
-TAMANOS_INSERTION = [10_000, 1_000]
+TAMANOS_INSERTION = [1_000_000, 1_000]
 
 
 # --------------------- Metodos auxiliares ---------------------------
@@ -95,7 +98,7 @@ def bucket_sort(arr):
 
 def main():
     global tipo_csv
-    variante = sys.argv[1] if len(sys.argv) > 1 else "aleatorio"
+    variante = sys.argv[1] if len(sys.argv) > 1 else VARIANTE
     if variante not in VARIANTES:
         sys.exit("Variante no valida: " + variante + " (usa " + "|".join(VARIANTES) + ")")
     ruta, tipo_csv = VARIANTES[variante]
