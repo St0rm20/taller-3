@@ -2,7 +2,7 @@ import os
 import unicodedata
 
 # Si es False se asume que solo son pruebas y no se guarda nada
-guardar = True
+guardar = False
 
 CARPETA = os.path.join("tiempos", "python")
 ENCABEZADO = "algoritmo,tipo,longitud,tiempo"
@@ -18,11 +18,11 @@ def registrar_tiempo(algoritmo, tipo, longitud, tiempo):
 
 
 # Metodo de utilidad: devuelve el nombre normalizado del tipo
-# ("ordenamiento" o "busqueda")
+# ("ordenamiento", "or_ascendente", "or_descendente" o "busqueda")
 def normalizar_tipo(tipo):
     t = unicodedata.normalize("NFD", tipo.strip().lower())
     t = "".join(c for c in t if unicodedata.category(c) != "Mn")
-    if t not in ("ordenamiento", "busqueda"):
+    if t not in ("ordenamiento", "or_ascendente", "or_descendente", "busqueda"):
         raise ValueError("Tipo de algoritmo no valido: " + tipo)
     return t
 

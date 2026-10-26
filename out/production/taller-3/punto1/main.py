@@ -14,6 +14,15 @@ sys.setrecursionlimit(20_000)
 TAMANOS = [1_000_000, 100_000, 10_000, 1_000]
 REPETICIONES = 5
 
+# Variantes de entrada: nombre -> (txt de entrada, csv de salida)
+# Uso: python punto1/main.py [aleatorio|ascendente|descendente]
+VARIANTES = {
+    "aleatorio": ("numeros.txt", "ordenamiento"),
+    "ascendente": ("numeros_asc.txt", "or_ascendente"),
+    "descendente": ("numeros_desc.txt", "or_descendente"),
+}
+tipo_csv = "ordenamiento"
+
 # Insertion sort es O(n^2) y en Python 1.000.000 tardaria horas por corrida,
 # asi que por defecto se omite ese tamano. Agrega 1_000_000 si de verdad lo quieres.
 TAMANOS_INSERTION = [10_000, 1_000]
@@ -50,7 +59,7 @@ def probar(nombre, arr, algoritmo, tamanos=TAMANOS):
             res = ejecutar(algoritmo, arr_copy)
             if esta_ordenado(arr_copy):
                 print("ordenado")
-                csv.registrar_tiempo(nombre, "ordenamiento", n, res)
+                csv.registrar_tiempo(nombre, tipo_csv, n, res)
 
 
 # --------------------- Un metodo por algoritmo ---------------------------
@@ -85,7 +94,14 @@ def bucket_sort(arr):
 # --------------------- Main ---------------------------
 
 def main():
-    arr = txtmanager.cargar_numeros()
+    global tipo_csv
+    variante = sys.argv[1] if len(sys.argv) > 1 else "aleatorio"
+    if variante not in VARIANTES:
+        sys.exit("Variante no valida: " + variante + " (usa " + "|".join(VARIANTES) + ")")
+    ruta, tipo_csv = VARIANTES[variante]
+    print("Variante:", variante, "->", ruta, "->", tipo_csv + ".csv")
+
+    arr = txtmanager.cargar_numeros(ruta)
     print("Longitud del arreglo extraido:", len(arr))
 
     insertion_sort(arr)

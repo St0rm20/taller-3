@@ -90,7 +90,7 @@ def exponential_search(arr):
 # --------------------- Main ---------------------------
 
 def main():
-    arr = txtmanager.cargar_numeros()
+    arr = txtmanager.cargar_numeros("ascendente.txt")
     print("Longitud del arreglo extraido:", len(arr))
 
     #linear_search(arr)

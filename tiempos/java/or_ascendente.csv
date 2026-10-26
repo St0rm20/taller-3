@@ -1,0 +1,121 @@
+algoritmo,tipo,longitud,tiempo
+Insertion sort,or_ascendente,1000000,718669
+Insertion sort,or_ascendente,1000000,654135
+Insertion sort,or_ascendente,1000000,751076
+Insertion sort,or_ascendente,1000000,548674
+Insertion sort,or_ascendente,1000000,714758
+Insertion sort,or_ascendente,100000,30521
+Insertion sort,or_ascendente,100000,25631
+Insertion sort,or_ascendente,100000,33384
+Insertion sort,or_ascendente,100000,31009
+Insertion sort,or_ascendente,100000,44699
+Insertion sort,or_ascendente,10000,7124
+Insertion sort,or_ascendente,10000,7543
+Insertion sort,or_ascendente,10000,7054
+Insertion sort,or_ascendente,10000,4819
+Insertion sort,or_ascendente,10000,7124
+Insertion sort,or_ascendente,1000,3772
+Insertion sort,or_ascendente,1000,3353
+Insertion sort,or_ascendente,1000,3282
+Insertion sort,or_ascendente,1000,1467
+Insertion sort,or_ascendente,1000,3841
+Dual pivot quicksort,or_ascendente,1000000,29327695
+Dual pivot quicksort,or_ascendente,1000000,27572299
+Dual pivot quicksort,or_ascendente,1000000,27772394
+Dual pivot quicksort,or_ascendente,1000000,29971772
+Dual pivot quicksort,or_ascendente,1000000,33237630
+Dual pivot quicksort,or_ascendente,100000,3109692
+Dual pivot quicksort,or_ascendente,100000,2479093
+Dual pivot quicksort,or_ascendente,100000,2729614
+Dual pivot quicksort,or_ascendente,100000,2668224
+Dual pivot quicksort,or_ascendente,100000,2689735
+Dual pivot quicksort,or_ascendente,10000,219442
+Dual pivot quicksort,or_ascendente,10000,229011
+Dual pivot quicksort,or_ascendente,10000,222306
+Dual pivot quicksort,or_ascendente,10000,242001
+Dual pivot quicksort,or_ascendente,10000,244864
+Dual pivot quicksort,or_ascendente,1000,24794
+Dual pivot quicksort,or_ascendente,1000,22489
+Dual pivot quicksort,or_ascendente,1000,23885
+Dual pivot quicksort,or_ascendente,1000,24444
+Dual pivot quicksort,or_ascendente,1000,25283
+Merge sort,or_ascendente,1000000,151013693
+Merge sort,or_ascendente,1000000,146350727
+Merge sort,or_ascendente,1000000,150010211
+Merge sort,or_ascendente,1000000,157133971
+Merge sort,or_ascendente,1000000,75485999
+Merge sort,or_ascendente,100000,5052473
+Merge sort,or_ascendente,100000,5359286
+Merge sort,or_ascendente,100000,5391692
+Merge sort,or_ascendente,100000,5516290
+Merge sort,or_ascendente,100000,7105811
+Merge sort,or_ascendente,10000,549513
+Merge sort,or_ascendente,10000,547138
+Merge sort,or_ascendente,10000,533379
+Merge sort,or_ascendente,10000,534078
+Merge sort,or_ascendente,10000,753520
+Merge sort,or_ascendente,1000,53009
+Merge sort,or_ascendente,1000,51822
+Merge sort,or_ascendente,1000,39531
+Merge sort,or_ascendente,1000,47073
+Merge sort,or_ascendente,1000,48749
+Heap sort,or_ascendente,1000000,146766911
+Heap sort,or_ascendente,1000000,105967614
+Heap sort,or_ascendente,1000000,96695879
+Heap sort,or_ascendente,1000000,101697297
+Heap sort,or_ascendente,1000000,99850548
+Heap sort,or_ascendente,100000,10717384
+Heap sort,or_ascendente,100000,9986633
+Heap sort,or_ascendente,100000,9070522
+Heap sort,or_ascendente,100000,9476301
+Heap sort,or_ascendente,100000,9575895
+Heap sort,or_ascendente,10000,844174
+Heap sort,or_ascendente,10000,926517
+Heap sort,or_ascendente,10000,841869
+Heap sort,or_ascendente,10000,860447
+Heap sort,or_ascendente,10000,1653217
+Heap sort,or_ascendente,1000,70191
+Heap sort,or_ascendente,1000,76685
+Heap sort,or_ascendente,1000,78501
+Heap sort,or_ascendente,1000,69981
+Heap sort,or_ascendente,1000,70400
+Radix sort,or_ascendente,1000000,207767439
+Radix sort,or_ascendente,1000000,192775127
+Radix sort,or_ascendente,1000000,199352448
+Radix sort,or_ascendente,1000000,201208904
+Radix sort,or_ascendente,1000000,173452783
+Radix sort,or_ascendente,100000,20512792
+Radix sort,or_ascendente,100000,17770885
+Radix sort,or_ascendente,100000,17150343
+Radix sort,or_ascendente,100000,18138042
+Radix sort,or_ascendente,100000,20128455
+Radix sort,or_ascendente,10000,2086235
+Radix sort,or_ascendente,10000,2046705
+Radix sort,or_ascendente,10000,2023796
+Radix sort,or_ascendente,10000,2149372
+Radix sort,or_ascendente,10000,1982101
+Radix sort,or_ascendente,1000,214833
+Radix sort,or_ascendente,1000,197721
+Radix sort,or_ascendente,1000,198978
+Radix sort,or_ascendente,1000,215880
+Radix sort,or_ascendente,1000,194648
+Bucket sort,or_ascendente,1000000,66553413
+Bucket sort,or_ascendente,1000000,80360306
+Bucket sort,or_ascendente,1000000,74175983
+Bucket sort,or_ascendente,1000000,78057423
+Bucket sort,or_ascendente,1000000,298199584
+Bucket sort,or_ascendente,100000,6007345
+Bucket sort,or_ascendente,100000,6169517
+Bucket sort,or_ascendente,100000,6202133
+Bucket sort,or_ascendente,100000,6684877
+Bucket sort,or_ascendente,100000,53602917
+Bucket sort,or_ascendente,10000,686612
+Bucket sort,or_ascendente,10000,568929
+Bucket sort,or_ascendente,10000,777406
+Bucket sort,or_ascendente,10000,678231
+Bucket sort,or_ascendente,10000,616560
+Bucket sort,or_ascendente,1000,48121
+Bucket sort,or_ascendente,1000,54406
+Bucket sort,or_ascendente,1000,46863
+Bucket sort,or_ascendente,1000,48749
+Bucket sort,or_ascendente,1000,49378

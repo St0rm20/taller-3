@@ -11,7 +11,7 @@ import java.text.Normalizer;
 public class Csv {
 
     // Si es false se asume que solo son pruebas y no se guarda nada
-    public static boolean guardar = false;
+    public static boolean guardar = true;
 
     static final String CARPETA = "tiempos/java";
     static final String ENCABEZADO = "algoritmo,tipo,longitud,tiempo";
@@ -26,11 +26,12 @@ public class Csv {
     }
 
     // Metodo de utilidad: devuelve el nombre normalizado del tipo
-    // ("ordenamiento" o "busqueda")
+    // ("ordenamiento", "or_ascendente", "or_descendente" o "busqueda")
     static String normalizarTipo(String tipo) {
         String t = Normalizer.normalize(tipo.trim().toLowerCase(), Normalizer.Form.NFD)
                 .replaceAll("\\p{M}", "");
-        if (!t.equals("ordenamiento") && !t.equals("busqueda")) {
+        if (!t.equals("ordenamiento") && !t.equals("or_ascendente")
+                && !t.equals("or_descendente") && !t.equals("busqueda")) {
             throw new IllegalArgumentException("Tipo de algoritmo no valido: " + tipo);
         }
         return t;

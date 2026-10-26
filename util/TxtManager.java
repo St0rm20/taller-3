@@ -5,8 +5,7 @@ import java.nio.file.Paths;
 
 public class TxtManager {
 
-    public static int[] cargarNumeros() throws Exception {
-        String ruta = "numeros.txt";
+    public static int[] cargarNumeros(String ruta) throws Exception {
         return Files.readAllLines(Paths.get(ruta))
                 .stream()
                 .filter(linea -> !linea.isBlank())

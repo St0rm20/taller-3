@@ -11,6 +11,9 @@ public class Main {
     private static final int[] TAMANOS = { 1_000_000, 100_000, 10_000, 1_000 };
     private static final int REPETICIONES = 5;
 
+    // CSV de salida segun la variante elegida (ver main)
+    private static String tipoCsv = "ordenamiento";
+
     // Calentamiento de la JVM (no se mide ni se guarda)
     private static final int CALENTAMIENTO_REPETICIONES = 10;
     private static final int CALENTAMIENTO_TAMANO = 50_000;
@@ -59,7 +62,7 @@ public class Main {
                 long res = ejecutar(algoritmo, arrCopy);
                 if (estaOrdenado(arrCopy)) {
                     System.out.println("ordenado");
-                    Csv.guardarDatos(nombre, "ordenamiento", n, res);
+                    Csv.guardarDatos(nombre, tipoCsv, n, res);
                 }
             }
         }
@@ -97,7 +100,19 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        int[] arr = TxtManager.cargarNumeros();
+        // Uso: java punto1.Main [aleatorio|ascendente|descendente]
+        String variante = args.length > 0 ? args[0] : "aleatorio";
+        String ruta;
+        switch (variante) {
+            case "aleatorio" -> { ruta = "numeros.txt"; tipoCsv = "ordenamiento"; }
+            case "ascendente" -> { ruta = "numeros_asc.txt"; tipoCsv = "or_ascendente"; }
+            case "descendente" -> { ruta = "numeros_desc.txt"; tipoCsv = "or_descendente"; }
+            default -> throw new IllegalArgumentException(
+                    "Variante no valida: " + variante + " (usa aleatorio|ascendente|descendente)");
+        }
+        System.out.println("Variante: " + variante + " -> " + ruta + " -> " + tipoCsv + ".csv");
+
+        int[] arr = TxtManager.cargarNumeros(ruta);
         System.out.println("Longitud del arreglo extraido: " + arr.length);
 
         insertionSort(arr);

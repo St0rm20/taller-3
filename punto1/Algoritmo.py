@@ -30,7 +30,14 @@ def dualPivotQuickSort(arr, low, high):
         dualPivotQuickSort(arr, rp + 1, high)
         
 def partition(arr, low, high):
-    
+
+    # Los pivotes se toman a 1/3 y 2/3 del rango y se llevan a los extremos.
+    # Con pivotes en los extremos, un arreglo ordenado produce particiones
+    # vacias y recursion de profundidad n/2 (O(n^2)).
+    tercio = (high - low) // 3
+    arr[low], arr[low + tercio] = arr[low + tercio], arr[low]
+    arr[high], arr[high - tercio] = arr[high - tercio], arr[high]
+
     if arr[low] > arr[high]:
         arr[low], arr[high] = arr[high], arr[low]
         

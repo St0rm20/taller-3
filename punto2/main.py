@@ -90,13 +90,13 @@ def exponential_search(arr):
 # --------------------- Main ---------------------------
 
 def main():
-    arr = txtmanager.cargar_numeros()
+    arr = txtmanager.cargar_numeros("ascendente.txt")
     print("Longitud del arreglo extraido:", len(arr))
 
-    #linear_search(arr)
-    #binary_search(arr)
-    #ternary_search(arr)
-    #jump_search(arr)
+    linear_search(arr)
+    binary_search(arr)
+    ternary_search(arr)
+    jump_search(arr)
     interpolation_search(arr)
     exponential_search(arr)
 

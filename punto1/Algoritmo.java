@@ -58,6 +58,13 @@ public class Algoritmo {
         }
 
         static int[] partition(int[] arr, int low, int high) {
+            // Los pivotes se toman a 1/3 y 2/3 del rango y se llevan a los extremos.
+            // Con pivotes en los extremos, un arreglo ordenado produce particiones
+            // vacias y recursion de profundidad n/2 (O(n^2)).
+            int tercio = (high - low) / 3;
+            swap(arr, low, low + tercio);
+            swap(arr, high, high - tercio);
+
             if (arr[low] > arr[high])
                 swap(arr, low, high);
 
@@ -325,57 +332,57 @@ public class Algoritmo {
 
     // Fuente: https://www.geeksforgeeks.org/dsa/bucket-sort-2/
 
-    static class BucketSort {
-        // Insertion sort function to sort individual buckets
-        public static void insertionSort(List<Integer> bucket) {
-            for (int i = 1; i < bucket.size(); ++i) {
-                int key = bucket.get(i);
-                int j = i - 1;
-                while (j >= 0 && bucket.get(j) > key) {
-                    bucket.set(j + 1, bucket.get(j));
-                    j--;
-                }
-                bucket.set(j + 1, key);
-            }
-        }
-
-        // Function to sort arr[] of size n using bucket sort
-        public static void bucketSort(int[] arr) {
-            int n = arr.length;
-
-            int min = arr[0], max = arr[0];
-            for (int i = 1; i < n; i++) {
-                if (arr[i] < min)
-                    min = arr[i];
-                if (arr[i] > max)
-                    max = arr[i];
-            }
-            long range = (long) max - min + 1;
-
-            // 1) Create n empty buckets
-            List<Integer>[] buckets = new ArrayList[n];
-            for (int i = 0; i < n; i++) {
-                buckets[i] = new ArrayList<>();
-            }
-
-            // 2) Put array elements in different buckets
-            for (int i = 0; i < n; i++) {
-                int bi = (int) (((long) (arr[i] - min) * n) / range);
-                buckets[bi].add(arr[i]);
-            }
-
-            // 3) Sort individual buckets using insertion sort
-            for (int i = 0; i < n; i++) {
-                insertionSort(buckets[i]);
-            }
-
-            // 4) Concatenate all buckets into arr[]
-            int index = 0;
-            for (int i = 0; i < n; i++) {
-                for (int j = 0; j < buckets[i].size(); j++) {
-                    arr[index++] = buckets[i].get(j);
+        static class BucketSort {
+            // Insertion sort function to sort individual buckets
+            public static void insertionSort(List<Integer> bucket) {
+                for (int i = 1; i < bucket.size(); ++i) {
+                    int key = bucket.get(i);
+                    int j = i - 1;
+                    while (j >= 0 && bucket.get(j) > key) {
+                        bucket.set(j + 1, bucket.get(j));
+                        j--;
+                    }
+                    bucket.set(j + 1, key);
                 }
             }
+
+            // Function to sort arr[] of size n using bucket sort
+            public static void bucketSort(int[] arr) {
+                int n = arr.length;
+
+                int min = arr[0], max = arr[0];
+                for (int i = 1; i < n; i++) {
+                    if (arr[i] < min)
+                        min = arr[i];
+                    if (arr[i] > max)
+                        max = arr[i];
+                }
+                long range = (long) max - min + 1;
+
+                // 1) Create n empty buckets
+                List<Integer>[] buckets = new ArrayList[n];
+                for (int i = 0; i < n; i++) {
+                    buckets[i] = new ArrayList<>();
+                }
+
+                // 2) Put array elements in different buckets
+                for (int i = 0; i < n; i++) {
+                    int bi = (int) (((long) (arr[i] - min) * n) / range);
+                    buckets[bi].add(arr[i]);
+                }
+
+                // 3) Sort individual buckets using insertion sort
+                for (int i = 0; i < n; i++) {
+                    insertionSort(buckets[i]);
+                }
+
+                // 4) Concatenate all buckets into arr[]
+                int index = 0;
+                for (int i = 0; i < n; i++) {
+                    for (int j = 0; j < buckets[i].size(); j++) {
+                        arr[index++] = buckets[i].get(j);
+                    }
+                }
+            }
         }
-    }
 }

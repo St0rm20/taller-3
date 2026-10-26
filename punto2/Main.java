@@ -117,7 +117,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        int[] arr = TxtManager.cargarNumeros();
+        int[] arr = TxtManager.cargarNumeros("ascendente.txt");
         System.out.println("Longitud del arreglo extraido: " + arr.length);
 
 //        linearSearch(arr);
